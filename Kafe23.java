@@ -45,6 +45,9 @@ public class Kafe23 {
             case "coklat":
                 harga = 20000;
                 break;
+            default:
+                System.out.println("Menu yang dipilih tidak tersedia.");
+                return;
         }
 
         double total = harga * jumlah;
@@ -58,6 +61,9 @@ public class Kafe23 {
             case 'L':
                 total += 0.4 * total;
                 break;
+            default:
+                System.out.println("Ukuran cup yang dipilih tidak tersedia.");
+                return;
         }
 
         double diskon = anggota ? 0.1 : 0;
